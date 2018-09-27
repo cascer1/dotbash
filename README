@@ -4,7 +4,7 @@
 
 # Installation (for not-so lazy people):
 
-    git clone https://github.com/cascer1/dotbash.git ~/.bash
+    git clone git@github.com:cascer1/dotbash ~/.bash
 
 Create symlinks:
 
