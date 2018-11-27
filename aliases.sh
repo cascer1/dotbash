@@ -9,14 +9,6 @@ alias hextime='tohex $(date +%s)'
 
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
-alias pullall='ls | xargs -I{} git -C {} pull'
-
-alias pullalldev='ls | xargs -I{} git -C {} fetch origin develop:develop'
-
-function pushallbranch() {
-    ls | xargs -I{} git -C {} push origin $1:$1
-}
-
 function tla () {
     tmux list-sessions | while read -r session_line ; do
         echo
