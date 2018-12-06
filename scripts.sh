@@ -22,8 +22,8 @@ fi
 # echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"
 
 # last command
-lastcmd() { LASTCMD=$(history 1 | cut -c8-); echo -ne "\e]2;$LASTCMD\a\e]1;$LASTCMD\a"; }
-PROMPT_COMMAND=lastcmd
+#lastcmd() { LASTCMD=$(history 1 | cut -c8-); echo -ne "\e]2;$LASTCMD\a\e]1;$LASTCMD\a"; }
+#PROMPT_COMMAND=lastcmd
 
 # Change folder color to Pink - Blue is too hard to read
 LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
