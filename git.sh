@@ -1,6 +1,8 @@
 #!/bin/bash
 # Useful git functions
 
+alias gu=git_update
+
 function git_update_loop() {
   if [ -d $1 ]; then
     pushd $1 > /dev/null
