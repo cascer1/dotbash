@@ -129,3 +129,13 @@ fi
 if [ -f ~/.bash/private.sh ]; then
     . ~/.bash/private.sh
 fi
+
+# Private environment variables
+if [ -f ~/.bash/environment_private.sh ]; then
+    . ~/.bash/environment_private.sh
+fi
+
+# Misc environment variables
+if [ -f ~/.bash/environment.sh ]; then
+    . ~/.bash/environment.sh
+fi
